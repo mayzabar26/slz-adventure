@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures - SLZ Adventure</title>
+    <meta name="description" content="SLZ Adventure: discover the best tourist attractions of São Luís, Maranhão.">
+    <meta name="author" content="Mayza Costa Barbosa">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="slz_icon.png"> <!--Adding Favicon tag-->
+
+    <!--Open Graph Meta tags-->
+    <meta property="og:title" content="SLZ Adventure: Exploring Tourism in São Luís, Maranhão">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://motamachado.com.br/wp-content/uploads/2021/08/25-08-Blog-Capa.png">
+    <meta property="og:url" content="COLOCAR LINK DO SITE AQUI">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> <!--Normalize CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="scripts/slz_script.js" defer></script>
+</head>
+
+<body>
+    <header><!--LOGO AND ANIMATED BUTTON-->
+        <img class="logo-img" src="images/slz_logo.png" alt="SLZ Adventure logo" width="180" loading="lazy">
+        <h1 class="company-name"></h1>
+        <button id="myButton"></button> <!--HAMBURGER BUTTON-->
+    </header>
+
+    <nav id="animateme">
+        <ul class="menuLinks"> <!--NAVBAR HERE-->
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="adventures.html" title="Adventures">Adventures</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            <li><a href="#" title="Plan your trip">Plan your trip</a></li>
+        </ul>
+    </nav>
+</body>
+
+<main class="adventures">
+
+</main>
+
+
+
+
+<footer><!--Footer here-->
+    <div class="footer-info">
+        <p><strong>SLZ Adventure</strong></p>
+        <p>123 Maplewood Avenue</p>
+        <p>São Luís, MA 90210</p>
+        <p>info@saoluis.org</p>
+        <p>233-555-2300</p>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon"><img src="images/instagram.png" alt="instagram Icon" width="40"></a>
+        <a href="https://x.com/" aria-label="Twitter" class="social-icon"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
+    </div>
+
+    <div class="footer-js">
+        <p>WDD231 Class Project</p>
+        <p>Mayza Costa Barbosa</p>
+        <p>&copy;  <span id="currentYear"></span> SLZ Adventure</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+</body>
+</html>
