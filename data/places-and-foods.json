@@ -1,0 +1,23 @@
+{
+    "places": [
+      { "title": "Rua Portugal", "description": "A charming street in São Luís, known for its colonial architecture and cultural history.", "image": "https://viajantesemfim.com.br/wp-content/uploads/2022/03/274966197_4837055329747532_3102252651510733147_n.jpg" },
+      { "title": "Biblioteca Benedito Leite", "description": "A historic library in São Luís, offering a rich collection of books and manuscripts.", "image": "https://www.mpma.mp.br/wp-content/uploads/2024/04/Foto-fachada-da-Biblioteca-Benedito-Leite.jpg" },
+      { "title": "Palácio dos Leões", "description": "A historical palace that serves as the governor's residence, overlooking the São Marcos Bay.", "image": "https://oimparcial.com.br/app/uploads/2017/07/67714557370835.jpg" },
+      { "title": "Palácio De La Ravardiere", "description": "A colonial-era palace with significant architectural and historical importance in São Luís.", "image": "https://turismosaoluis.com.br/wp-content/uploads/2023/10/PREFEITURA-PALACIO-DE-LA-RAVARDIERE-2.jpg" },
+      { "title": "Raposa Beach", "description": "Beautiful beach with calm waters, ideal for relaxation and enjoying local seafood delicacies.", "image": "https://caminhosmelevem.com/wp-content/uploads/2023/12/raposa-maranhao-edit-21.jpg" },
+      { "title": "Arthur Azevedo Theater", "description": "An elegant theater showcasing classical and contemporary performances in São Luís.", "image": "https://www.revistaprefeitosdesaopaulo.com.br/wp-content/uploads/2022/08/teatro-arthur-azevedo-sala-de-espetaculos.jpg" },
+      { "title": "Lençóis Maranhanses", "description": "An awe-inspiring national park with vast sand dunes and crystal-clear lagoons.", "image": "https://content.nationalgeographic.pt/medio/2024/08/02/lencois-maranhenses-1-6c45fb9b_b2b62afb_240801151513_240802111350_1200x630.jpg" },
+      { "title": "Alcântara City", "description": "A breathtaking colonial town, rich in historical ruins and cultural heritage.", "image": "https://www.penaestrada.blog.br/wp-content/uploads/2015/08/alcantara-08-1.jpg.webp" }
+    ],
+    "food": [
+      { "title": "Caçarola Bistrô", "address": "Rua Nazaré, 200 - Centro Histórico, São Luís - MA, 65010-410", "image": "https://s2-g1.glbimg.com/B7N80Mjospq0dYTKlYzyAklzCVs=/0x0:2100x1339/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/9/4/8mRGPYQky9DmorYLasiQ/foto-01-cacarola-g1.png"},
+      { "title": "DocBrown", "address": "R. das Alamandas, 1 - Q. 12, Loja 2 - Jardim Renascença, São Luís - MA, 65075-001", "image": "https://entropiaarquitetura.com.br/wp-content/uploads/2023/06/ENTROPIA_DOCBROWN_JARDIM-RENASCENCA-219-Editar.jpg" },
+      { "title": "Cafofinho da Tia Dica", "address": "Rua Portugal, R. da Estrela - Centro, São Luís - MA, 65010-480", "image": "https://culturaalternativa.com.br/wp-content/uploads/2021/12/TIA-DICA-CULTURA-ALTERNATIVA-Foto-20-12-2021-11-34-24.jpg" },
+      { "title": "Casa Da Juja", "address": "Av. São Marcos, 12 - Ponta D'areia, São Luís - MA, 65077-310", "image": "https://www.viajenaviagem.com/wp-content/uploads/2015/08/atins-casa-de-juja-1920x1080-2.jpg.webp" },
+      { "title": "Flor de Vinagreira", "address": "R. da Estrela, 220 - Centro, São Luís - MA, 65015-200", "image": "https://horaextra.slz.br/wp-content/uploads/2019/03/RES-AMBIENTEI-NTERNO--1024x768.jpg" },
+      { "title": "Cabana do Sol", "address": "Av. Litorânea, 10 - Calhau, São Luís - MA, 65076-170", "image": "https://theworldkeys.com/wp-content/uploads/2023/07/Cabana-Do-Sol-restaurant-Sao-Luis_theworldkeys_2-1.webp" },
+      { "title": "Camarada Camarão", "address": "Av. Daniel de La Touche, 987 - Cohama, São Luís - MA, 65074-115", "image": "https://grupohel.com/wp/wp-content/uploads/2023/02/Foto2.1_Guilherme-Paiva-1024x680.jpg" },
+      { "title": "Coco Bambu", "address": "Av. Coronel Colares Moreira, 1 - Quadra 19 - Calhau, São Luís - MA, 65071-322", "image": "https://cdn0.casamentos.com.br/vendor/6598/3_2/960/jpg/img-3363_13_356598-164875661031196.jpeg" }
+    ]
+  }
+  
