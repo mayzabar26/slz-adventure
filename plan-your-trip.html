@@ -38,65 +38,64 @@
             <li class="current-menu-item"><a href="plan-your-trip.html" title="Plan your trip">Plan your trip</a></li>
         </ul>
     </nav>
-</body>
+    
+    <main class="plan-trip">
+        <h1>Schedule your free consultation!</h1>
+        
+        <form method="GET" action="thanks.html" class="designOne">
+            <div class="form-group"> <!--PERSONAL INFORMATION-->
+                <h3 class="form-text">Personal Information</h3>
+                <label>First Name: <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Cell Phone: <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                <label>Email: <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            </div>
 
-<main class="plan-trip">
-    <h1>Schedule your free consultation!</h1>
+            <div class="form-group"> <!--SELECT DATE-->
+                <label class="form-text" for="date">Select Preferred Date</label>
+                <input type="date" name="date" id="date" required>
+            </div>
 
-    <form method="GET" action="thanks.html" class="designOne">
-        <div class="form-group"> <!--PERSONAL INFORMATION-->
-            <h3 class="form-text">Personal Information</h3>
-            <label>First Name: <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            <label>Last Name: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label>Cell Phone: <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-            <label>Email: <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            <div class="form-group"> <!--SELECT TIME-->
+                <label class="form-text">Select Preferred Time</label>
+                <select id="time" name="time" required>
+                    <option type="" disabled selected>Select a time</option>
+                    <option type="morning">Morning (9 AM - 12 PM)</option>
+                    <option type="afternoon">Afternoon (12 PM - 5 PM)</option>
+                    <option type="evening">Evening (5 PM - 8 PM)</option>
+                </select>
+            </div>
+
+            <div class="form-group"> <!--ADDITIONAL INFORMATION-->
+                <label form="message">Additional Information</label>
+                <textarea id="message" name="message" rows="4" placeholder="Let us know your preferences or questions"></textarea>
+            </div>
+
+            <button type="submit">Schedule Consultation</button>  <!--SUBMIT BUTTON-->
+        </form>
+    </main>
+
+    <footer><!--Footer here-->
+        <div class="footer-info">
+            <p><strong>SLZ Adventure</strong></p>
+            <p>123 Maplewood Avenue</p>
+            <p>São Luís, MA 90210</p>
+            <p>info@saoluis.org</p>
+            <p>233-555-2300</p>
         </div>
 
-        <div class="form-group"> <!--SELECT DATE-->
-            <label class="form-text" for="date">Select Preferred Date</label>
-            <input type="date" name="date" id="date" required>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon"><img src="images/instagram.png" alt="instagram Icon" width="40"></a>
+            <a href="https://x.com/" aria-label="Twitter" class="social-icon"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
         </div>
 
-        <div class="form-group"> <!--SELECT TIME-->
-            <label class="form-text">Select Preferred Time</label>
-            <select id="time" name="time" required>
-                <option type="" disabled selected>Select a time</option>
-                <option type="morning">Morning (9 AM - 12 PM)</option>
-                <option type="afternoon">Afternoon (12 PM - 5 PM)</option>
-                <option type="evening">Evening (5 PM - 8 PM)</option>
-            </select>
+        <div class="footer-js">
+            <p>WDD231 Class Project</p>
+            <p>Mayza Costa Barbosa</p>
+            <p>&copy;  <span id="currentYear"></span> SLZ Adventure</p>
+            <p id="lastModified"></p>
         </div>
-
-        <div class="form-group"> <!--ADDITIONAL INFORMATION-->
-            <label form="message">Additional Information</label>
-            <textarea id="message" name="message" rows="4" placeholder="Let us know your preferences or questions"></textarea>
-        </div>
-
-        <button type="submit">Schedule Consultation</button>  <!--SUBMIT BUTTON-->
-    </form>
-</main>
-
-<footer><!--Footer here-->
-    <div class="footer-info">
-        <p><strong>SLZ Adventure</strong></p>
-        <p>123 Maplewood Avenue</p>
-        <p>São Luís, MA 90210</p>
-        <p>info@saoluis.org</p>
-        <p>233-555-2300</p>
-    </div>
-
-    <div class="footer-social">
-        <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon"><img src="images/instagram.png" alt="instagram Icon" width="40"></a>
-        <a href="https://x.com/" aria-label="Twitter" class="social-icon"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
-        <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
-    </div>
-
-    <div class="footer-js">
-        <p>WDD231 Class Project</p>
-        <p>Mayza Costa Barbosa</p>
-        <p>&copy;  <span id="currentYear"></span> SLZ Adventure</p>
-        <p id="lastModified"></p>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

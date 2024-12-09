@@ -24,50 +24,67 @@
 </head>
 
 <body>
-    <header><!--LOGO AND ANIMATED BUTTON-->
+    <header>
         <img class="logo-img" src="images/slz_logo.png" alt="SLZ Adventure logo" width="180" loading="lazy">
         <h1 class="company-name"></h1>
-        <button id="myButton"></button> <!--HAMBURGER BUTTON-->
+        <button id="myButton" aria-label="Open menu"></button> <!-- HAMBURGER BUTTON -->
     </header>
 
     <nav id="animateme">
-        <ul class="menuLinks"> <!--NAVBAR HERE-->
+        <ul class="menuLinks">
             <li><a href="index.html" title="Home">Home</a></li>
             <li class="current-menu-item"><a href="adventures.html" title="Adventures">Adventures</a></li>
             <li><a href="gallery.html" title="Gallery">Gallery</a></li>
             <li><a href="#" title="Plan your trip">Plan your trip</a></li>
         </ul>
     </nav>
-</body>
 
-<main class="adventures">
+    <main class="adventures">
+        <div class="hero-container-adv">
+            <img class="hero-img-adv" src="" alt="">
+            <h1 class="title-adv">Make Memories on Your Next Trip</h1>
+            <p class="parag-adv">Discover the best places and food experiences!</p>
+            
+            <nav> <!--BUTTONS FOR THE USER (CHOOSE PLACES OR FOOD)-->
+                <button id="culture-btn">Culture</button>
+                <button id="food-btn">Food</button>
+            </nav>
+        </div>
+        
+        <section id="gallery" class="grid">
+            <!--GALLERY OF RECOMMENDATION WILL BE DISPLAYED HERE-->
+        </section>
 
-</main>
+        <!--DIALOG FOR DISPLAYING PLACES INFO HERE-->
+        <dialog id="info-dialog">
+            <button id="close-dialog" aria-label="Close dialog">&times;</button>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+            <img id="dialog-img" alt="Dialog image">
+        </dialog>
+    </main>
 
+    <footer> <!--FOOTER HERE-->
+        <div class="footer-info">
+            <p><strong>SLZ Adventure</strong></p>
+            <p>123 Maplewood Avenue</p>
+            <p>São Luís, MA 90210</p>
+            <p>info@saoluis.org</p>
+            <p>233-555-2300</p>
+        </div>
 
+        <div class="footer-social">
+            <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon"><img src="images/instagram.png" alt="Instagram Icon" width="40"></a>
+            <a href="https://x.com/" aria-label="Twitter" class="social-icon"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
+        </div>
 
-
-<footer><!--Footer here-->
-    <div class="footer-info">
-        <p><strong>SLZ Adventure</strong></p>
-        <p>123 Maplewood Avenue</p>
-        <p>São Luís, MA 90210</p>
-        <p>info@saoluis.org</p>
-        <p>233-555-2300</p>
-    </div>
-
-    <div class="footer-social">
-        <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon"><img src="images/instagram.png" alt="instagram Icon" width="40"></a>
-        <a href="https://x.com/" aria-label="Twitter" class="social-icon"><img src="images/twitter.png" alt="Twitter Icon" width="40"></a>
-        <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon"><img src="images/facebook.png" alt="Facebook Icon" width="40"></a>
-    </div>
-
-    <div class="footer-js">
-        <p>WDD231 Class Project</p>
-        <p>Mayza Costa Barbosa</p>
-        <p>&copy;  <span id="currentYear"></span> SLZ Adventure</p>
-        <p id="lastModified"></p>
-    </div>
-</footer>
+        <div class="footer-js">
+            <p>WDD231 Class Project</p>
+            <p>Mayza Costa Barbosa</p>
+            <p>&copy; <span id="currentYear"></span> SLZ Adventure</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
