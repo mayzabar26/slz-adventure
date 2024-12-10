@@ -1,0 +1,137 @@
+/*THIS CSS FILE IS FOR SMALL DEVICES*/
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    --font-family-01: "Roboto";
+    --font-family-02: "Open Sans";
+    --font-family-03: "Montserrat";
+  
+    --color-01: #ffffff;
+    --color-02: #000000;
+    --color-03: #88ccee;
+    --color-04: #d94a38;
+    --color-05: #f4ede4;
+    --color-06: #66a182;
+
+    --bar-color-01: #008000;
+    --bar-color-02: #FF4500;
+    --bar-color-03: #FFD700;
+    --bar-color-04: #00CED1;
+    --bar-color-05: #FFA500;
+}
+
+/*SAME CSS VALUES FOR ALL PAGES*/
+/*HEADER, TITLE AND LOGO IMG*/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--color-01);
+    padding: 0.7rem;
+    align-items: center;}
+
+/*NAVIGATION TAGS*/
+nav {background-color: var(--color-04); font-weight: 500;}
+.logo-img {margin: 10px; padding-right: 2rem; margin-left: 1.5rem;}
+#myButton::before {content: "=";}
+
+#myButton {
+    font-size: 2rem; /*making the hamburger button bigger*/
+    margin-left: 1.9rem;
+    background: none;
+    border: none;
+    color: var(--color-04);
+    cursor: pointer;
+    width: 100%;
+    text-align: right; /*Will be able to chage the ham button to left or right*/
+    padding: .50rem 2vw;} /*also will help in the size of the button. Min size is 320x47*/
+
+ul.menuLinks li a { /*Will change all the default color of my links in the nav bar*/
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--color-01);
+    text-decoration: none;
+    font-family: var(--font-family-03);}
+
+li.current-menu-item a {background-color: rgb(0,0,0,0.2);} /*darker backgrouund in the current page*/
+ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
+
+/*CSS FOR OPEN HAMBURGER BUTTON*/
+#myButton.open::before {content: "x";}
+
+
+/*ANIMATED TRANSITION*/
+nav {display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s ease-out;}
+nav ul {overflow: hidden;}
+nav.open {grid-template-rows: 1fr;}
+
+
+/*BODY*/
+body {font-family: var(--font-family-03);}
+
+
+/*FOOTER AND SOCIALS*/
+footer {
+    background-color: var(--color-04); 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    font-family: var(--font-family-03);
+    font-size: 0.8rem;}
+
+.footer-info, 
+.footer-social, 
+.footer-js {padding: 5px 0; /*Will reduce internal spacing*/}
+
+.footer-social {
+    display: flex;
+    justify-content: center; /*Centering the icons*/
+    gap: 8px;} /*Space between the icons*/
+
+#currentYear, #lastModified, p {color: var(--color-01);}
+#lastModified {font-weight: 700; color: var(--color-01);}
+
+
+/*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
+/********************** INDEX PAGE **********************/
+.hero-img {max-width: 100%;}
+
+.hero-text {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.h1-hero {font-size: 1.6rem;}
+.p-hero {color: var(--color-02); font-size: 1.2rem; margin-top: -10px;}
+
+/*COLOR BAR BELOW HERO IMAGE*/
+.color-bar {display: flex; height: 20px; width: 100%; margin-top: 20px;}
+.color {flex: 1;}
+.color.green {background-color: var(--bar-color-01);} 
+.color.red {background-color: var(--bar-color-02);}
+.color.yellow {background-color: var(--bar-color-03);} 
+.color.blue {background-color: var(--bar-color-04);}
+.color.orange {background-color: var(--bar-color-05);}
+
+
+/********************** ADVENTURE PAGE ******************/
+
+
+
+
+/********************** GALLERY PAGE ********************/
+
+
+
+
+/********************** PLAN YOUR TRIP PAGE *************/
+
+
+
+
+/********************** THANK YOU PAGE ******************/

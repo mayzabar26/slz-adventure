@@ -1,0 +1,94 @@
+/*THIS CSS FILE IS FOR LARGER DEVICES*/
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    --font-family-01: "Roboto";
+    --font-family-02: "Open Sans";
+    --font-family-03: "Montserrat";
+  
+    --color-01: #ffffff;
+    --color-02: #000000;
+    --color-03: #88ccee;
+    --color-04: #d94a38;
+    --color-05: #f4ede4;
+    --color-06: #66a182;
+}
+
+
+@media only screen and (min-width: 38rem) {
+    /*SAME CSS VALUES FOR ALL PAGES*/
+    /***HEADER AND NAV BAR***/
+    #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
+    ul.menuLinks, ul.menuLinks.open {display: flex; justify-content: end;} /*Will organize our menu links in the and of the bar*/
+    ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
+    header {background-color: var(--color-01);}
+
+    /***FOOTER AND SOCIALS ICON***/
+    footer {
+        background-color: var(--color-04); 
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 1rem;
+    }
+    
+    .footer-info {padding: 20px; text-align: left;}
+    .footer-js {padding: 20px; text-align: right;}
+    #currentYear, #lastModified, p {color: var(--color-01);}
+    #lastModified {font-weight: 700; color: var(--color-01);}
+
+    .footer-social {
+        display: flex;
+        justify-content: center; /*Place the icons in the center horizontally.*/
+        gap: 20px; /*Space between the icons */
+        padding: 30px 0;
+    }
+    
+    .social-icon {
+        color: var(--color-01);
+        font-size: 2rem; /* Icons' size */
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .social-icon:hover {color: var(--color-02);}
+    nav {grid-template-rows: 1fr;}
+    .list {width: 600px;}
+    .list .member-card {font-size: 0.75rem;}
+    .grid {font-size: 0.89rem;}
+
+    /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
+    /********************** INDEX PAGE **********************/
+    .hero-section {position: relative;}
+
+    .hero-text {
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        background-color: var(--color-06);
+        color: var(--color-01);
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.2rem;
+    }
+
+
+
+    /********************** ADVENTURE PAGE ******************/
+
+
+
+
+    /********************** GALLERY PAGE ********************/
+
+
+
+
+    /********************** PLAN YOUR TRIP PAGE *************/
+
+
+
+
+    /********************** THANK YOU PAGE ******************/
+}
