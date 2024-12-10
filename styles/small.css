@@ -109,6 +109,36 @@ footer {
 .h1-hero {font-size: 1.6rem;}
 .p-hero {color: var(--color-02); font-size: 1.2rem; margin-top: -10px;}
 
+#hero-button {
+    width: 70%;
+    height: 50px;
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: var(--color-06);
+    color: var(--color-01);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+#hero-button:hover {background-color: var(--bar-color-01);}
+
+/*****ANIMATION/TRANSITION - HERO BUTTON*****/
+#hero-button {animation: pulse 1s infinite;}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /*COLOR BAR BELOW HERO IMAGE*/
 .color-bar {display: flex; height: 20px; width: 100%; margin-top: 20px;}
 .color {flex: 1;}
@@ -118,7 +148,37 @@ footer {
 .color.blue {background-color: var(--bar-color-04);}
 .color.orange {background-color: var(--bar-color-05);}
 
-
+/*EVENTS, WEATHER AND FORECAST CARDS*/
+.index-page {margin: 20px;}
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 1rem; 
+    gap: 1rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    background-color: var(--color-01);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1 1 30%; 
+    min-width: 200px;
+    border-radius: 20px;
+    
+}
+.event-text {
+    margin-top: 10px;
+    background-color: var(--color-06);
+    color: var(--color-01);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.bold {text-align: center; color: var(--color-02); margin: 10px;}
+.event-img {width: 100%; height: auto;}
 /********************** ADVENTURE PAGE ******************/
 
 
