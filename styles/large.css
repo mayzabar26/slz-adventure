@@ -183,11 +183,10 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        
     }
     
     /*RETURN WEBSITE BUTTON*/
-    .button {
+    .buttonS {
         display: inline-block;
         padding: 13px 15px;
         margin: 8px;
@@ -199,12 +198,13 @@
         transition: background-color 0.3s;
     }
     
-    .button:hover {background-color: green; color: var(--color-01);}  
+    .buttonS:hover {background-color: green; color: var(--color-01);}  
 
     .box-tex {color: var(--color-01);}
 
     /*RETURN WEBSITE BUTTON*/
     #results {margin-top: -40px; margin-left: 20px;}
-
+    #results p strong {color: var(--color-02);}
+    #results p {color: var(--color-02);}
     .color-bar-ty, .color-bar-tyb {display: none;}
 }
