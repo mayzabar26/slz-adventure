@@ -88,6 +88,21 @@
     .p-hero {color: var(--color-02); text-align: center; font-size: 1.5rem;}
     .color-bar {margin-top: -5px;}
 
+    /*****ANIMATION/TRANSITION - HERO BUTTON*****/
+    #hero-button {animation: pulse 1s infinite;}
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1); 
+        }
+        50% {
+            transform: scale(1.1); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
 
 
     /********************** ADVENTURE PAGE ******************/
@@ -101,9 +116,121 @@
 
 
     /********************** PLAN YOUR TRIP PAGE *************/
+    main.plan-trip {
+        padding: 15px;
+    }
+
+    form.designOne button {
+        font-size: 0.9rem;
+    }
+
+    .plan-trip {
+        max-width: 600px;
+    }
+
+    .plan-trip h1 {font-size: 1.8rem;}
 
 
+    /******************THANK YOU PAGE******************/
+    .thank-you-container {
+        text-align: center;
+        background-color: rgb(242, 242, 242);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    /******************TOP AND BOTTOM BACKGROUND******************/
+    .top-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: var(--color-06);
+        z-index: 1;
+    }
+    
+    .bottom-background {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        background-color: var(--color-04);
+        z-index: 1;
+    }
+    
+    /******************MAIN CONTENT******************/
+    main.content {z-index: 2; max-width: 600px; padding: 20px; background-color: var(--color-01);}
+    
+    /*CHECK ICON */
+    .check-icon img {width: 50px; height: 50px; margin-bottom: 10px;}
+    
+    /*TITLE AND MESSAGE*/
+    .ty {font-size: 2rem; color: var(--color-02); margin-bottom: 10px;}
+    
+    .msg {font-size: 1rem; color: var(--color-02); margin-bottom: 30px;}
+    
+    /*BOXES STYLE*/
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        background: var(--color-02);
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    
+    /* Ícones de redes sociais */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .icon {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+    }
+    
+    /*RETURN WEBSITE BUTTON*/
+    .button {
+        display: inline-block;
+        padding: 13px 15px;
+        margin: 8px;
+        background-color: var(--color-01);
+        color: var(--color-02);
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .button:hover {background-color: green; color: var(--color-01);}  
 
+    .box-tex {color: var(--color-01);}
 
-    /********************** THANK YOU PAGE ******************/
+    /*RETURN WEBSITE BUTTON*/
+    #results {margin-top: -40px; margin-left: 20px;}
+
+    .color-bar-ty, .color-bar-tyb {display: none;}
 }

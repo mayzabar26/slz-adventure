@@ -38,7 +38,7 @@ nav {background-color: var(--color-04); font-weight: 500;}
 
 #myButton {
     font-size: 2rem; /*making the hamburger button bigger*/
-    margin-left: 1.9rem;
+    margin-left: 0.4rem; /*MUDA A POSIÇÃO DO BOTÃO HAMBURGUER*/
     background: none;
     border: none;
     color: var(--color-04);
@@ -124,20 +124,7 @@ footer {
 
 #hero-button:hover {background-color: var(--bar-color-01);}
 
-/*****ANIMATION/TRANSITION - HERO BUTTON*****/
-#hero-button {animation: pulse 1s infinite;}
 
-@keyframes pulse {
-    0% {
-        transform: scale(1); 
-    }
-    50% {
-        transform: scale(1.1); 
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 /*COLOR BAR BELOW HERO IMAGE*/
 .color-bar {display: flex; height: 20px; width: 100%; margin-top: 20px;}
@@ -179,6 +166,40 @@ footer {
 }
 .bold {text-align: center; color: var(--color-02); margin: 10px;}
 .event-img {width: 100%; height: auto;}
+
+/*MESSAGE STYLE*/
+#message-content {
+    background-color: var(--color-06);
+    padding-top: 5px;
+    margin: 10px 0;
+    font-family: var(--font-family-01);
+    animation: pulse 1.5s infinite;
+}
+
+#message-content:hover {transform: scale(1.02);}
+
+.message {color: var(--color-01); text-align: center;}
+.message {margin: 0; font-size: 1.5rem; font-weight: 600;}
+
+/*COUNT STYLE*/
+#visitor-count {
+    background-color: var(--color-04);
+    color: var(--color-01);
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*Additional styling for responsive design*/
+@media only screen and (max-width: 768px) {
+    #message-content {
+        padding: 15px;
+    }
+    #visitor-count {
+        font-size: 1rem;
+    }
+}
 /********************** ADVENTURE PAGE ******************/
 
 
@@ -190,8 +211,189 @@ footer {
 
 
 /********************** PLAN YOUR TRIP PAGE *************/
+/*#myButtonH {
+    font-size: 2rem; /*making the hamburger button bigger*/
+    /*margin-left: 0.3rem;
+    background: none;
+    border: none;
+    color: var(--color-04);
+    cursor: pointer;
+    width: 100%;
+    text-align: right; /*Will be able to chage the ham button to left or right*/
+    /*padding: .50rem 2vw;} /*also will help in the size of the button. Min size is 320x47*/
 
+/*#myButtonH::before {content: "=";}
 
+#myButtonH.open::before {content: "x";}
+
+/*COLOR BAR (NAV AND FOOTER)*/
+.color-bar-form {display: flex; height: 20px; width: 100%;}
+.color-bar-footer {display: flex; height: 20px; width: 100%; margin-top: 20px;}
+.color-green {background-color: var(--bar-color-01); flex: 1;} 
+.color-red {background-color: var(--bar-color-02); flex: 1;}
+.color-yellow {background-color: var(--bar-color-03); flex: 1;} 
+.color-blue {background-color: var(--bar-color-04); flex: 1;}
+.color-orange {background-color: var(--bar-color-05); flex: 1;}
+
+/*FORM STYLE*/
+#form {background-color: var(--color-05); color: var(--color-02);}
+
+.plan-trip {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--color-01);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plan-trip h1 {font-size: 1.5rem; color: var(--color-02); margin-bottom: 20px;}
+form.designOne {display: flex; flex-direction: column; gap: 15px;}
+form.designOne .form-group {text-align: left;}
+.form-text {margin-bottom: 15px;}
+
+form.designOne label {
+    font-size: 0.95rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+form.designOne input,
+form.designOne select,
+form.designOne textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+form.designOne input:focus,
+form.designOne select:focus,
+form.designOne textarea:focus {
+    outline: none;
+    border-color: var(--color-06);
+    background-color: var(--color-01);
+}
+form.designOne textarea {resize: vertical; min-height: 80px;}
+
+/*SUBMIT BUTTON*/
+form.designOne button {
+    padding: 12px;
+    font-size: 1rem;
+    color: var(--color-01);
+    background-color: var(--color-06);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+form.designOne button:hover {background-color: var(--bar-color-01); transform: translateY(-2px); font-weight: 500;}
+
+/*****ANIMATION/TRANSITION - HERO BUTTON*****/
+form.designOne button {animation: pulse 1s infinite;}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(0.9); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 /********************** THANK YOU PAGE ******************/
+.thank-you-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-01); 
+}
+
+.check-icon {
+    margin: 20px;
+    animation: shake .2s infinite;
+    margin-right: -7px;
+}
+
+@keyframes shake {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+.thank-you-container img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.ty {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.msg {
+    font-size: 1.3rem; 
+    line-height: 1.5;
+    color: var(--color-02);
+    padding-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+}
+
+.box-tex {margin-top: 5px; color: var(--color-01);}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-02);
+    background-color: var(--color-01);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 9px;
+}
+
+.button:hover {background-color: var(--color-02); color: var(--color-01);}
+
+.box {background-color: var(--color-04); width: 100%; padding: 5px;}
+
+/******************THANK YOU PAGE RESULTS******************/
+#results {text-align: justify; padding: 20px; margin-left: 50px;}
+
+a {color: var(--color-01);}
+
+/*COLOR BAR (NAV AND FOOTER)*/
+.color-bar-ty {display: flex; height: 40px; width: 100%;}
+.color-bar-tyb {display: flex; height: 40px; width: 100%; margin-top: 20px;}
+.color-green {background-color: var(--bar-color-01); flex: 1;} 
+.color-red {background-color: var(--bar-color-02); flex: 1;}
+.color-yellow {background-color: var(--bar-color-03); flex: 1;} 
+.color-blue {background-color: var(--bar-color-04); flex: 1;}
+.color-orange {background-color: var(--bar-color-05); flex: 1;}

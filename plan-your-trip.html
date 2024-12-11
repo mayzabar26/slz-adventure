@@ -23,7 +23,7 @@
     <script src="scripts/slz_script.js" defer></script>
 </head>
 
-<body>
+<body id="form">
     <header><!--LOGO AND ANIMATED BUTTON-->
         <img class="logo-img" src="images/slz_logo.png" alt="SLZ Adventure logo" width="180" loading="lazy">
         <h1 class="company-name"></h1>
@@ -38,42 +38,60 @@
             <li class="current-menu-item"><a href="plan-your-trip.html" title="Plan your trip">Plan your trip</a></li>
         </ul>
     </nav>
+
+    <div class="color-bar-form"> <!--COLOR BAR BELOW NAV-->
+        <div class="color-green"></div>
+        <div class="color-red"></div>
+        <div class="color-yellow"></div>
+        <div class="color-blue"></div>
+        <div class="color-orange"></div>
+    </div>
     
     <main class="plan-trip">
-        <h1>Schedule your free consultation!</h1>
-        
-        <form method="GET" action="thanks.html" class="designOne">
-            <div class="form-group"> <!--PERSONAL INFORMATION-->
-                <h3 class="form-text">Personal Information</h3>
-                <label>First Name: <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                <label>Last Name: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Cell Phone: <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-                <label>Email: <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-            </div>
+        <section id="free-consultation">
+            <h1>Schedule your free consultation!</h1>
+            <form method="GET" action="thanks.html" class="designOne">
+                
+                <div class="form-group"> <!--PERSONAL INFORMATION-->
+                    <h3 class="form-text">Personal Information</h3>
+                    <label>First Name: <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Cell Phone: <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                    <label>Email: <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                </div>
 
-            <div class="form-group"> <!--SELECT DATE-->
-                <label class="form-text" for="date">Select Preferred Date</label>
-                <input type="date" name="date" id="date" required>
-            </div>
+                <div class="form-group"> <!--SELECT DATE-->
+                    <h3 class="form-text">Select Preferred Date</h3>
+                    <input type="date" name="date" id="date" required>
+                </div>
 
-            <div class="form-group"> <!--SELECT TIME-->
-                <label class="form-text">Select Preferred Time</label>
-                <select id="time" name="time" required>
-                    <option type="" disabled selected>Select a time</option>
-                    <option type="morning">Morning (9 AM - 12 PM)</option>
-                    <option type="afternoon">Afternoon (12 PM - 5 PM)</option>
-                    <option type="evening">Evening (5 PM - 8 PM)</option>
-                </select>
-            </div>
+                <div class="form-group"> <!--SELECT TIME-->
+                    <h3 class="form-text">Select Preferred Time</h3>
+                    <select id="time" name="time" required>
+                        <option type="" disabled selected>Select a time</option>
+                        <option type="morning">Morning (9 AM - 12 PM)</option>
+                        <option type="afternoon">Afternoon (12 PM - 5 PM)</option>
+                        <option type="evening">Evening (5 PM - 8 PM)</option>
+                    </select>
+                </div>
 
-            <div class="form-group"> <!--ADDITIONAL INFORMATION-->
-                <label form="message">Additional Information</label>
-                <textarea id="message" name="message" rows="4" placeholder="Let us know your preferences or questions"></textarea>
-            </div>
+                <div class="form-group"> <!--ADDITIONAL INFORMATION-->
+                    <label form="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Let us know your preferences or questions"></textarea>
+                </div>
 
-            <button type="submit">Schedule Consultation</button>  <!--SUBMIT BUTTON-->
-        </form>
+                <button type="submit">Schedule Consultation</button>  <!--SUBMIT BUTTON-->
+            </form>
+        </section>
     </main>
+
+    <div class="color-bar-footer"> <!--COLOR BAR FOOTER-->
+        <div class="color-green"></div>
+        <div class="color-red"></div>
+        <div class="color-yellow"></div>
+        <div class="color-blue"></div>
+        <div class="color-orange"></div>
+    </div>
 
     <footer><!--Footer here-->
         <div class="footer-info">
