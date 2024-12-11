@@ -110,7 +110,9 @@
     .message {color: var(--color-02);}
     #visitor-count {color: var(--color-01); background-color: var(--color-02);}
 
-    
+    .current-weather .content {position: relative; top: -50px;}
+
+    .weather-forecast .content {position: relative; top: -70px;}
 
     /********************** ADVENTURE PAGE ******************/
 

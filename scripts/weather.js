@@ -18,8 +18,6 @@ async function getWeather() {
 
         const temperature = weatherData.main.temp.toFixed(1);
         const description = weatherData.weather[0].description;
-        const high = weatherData.main.temp_max.toFixed(1);
-        const low = weatherData.main.temp_min.toFixed(1);
         const humidity = weatherData.main.humidity;
         const sunrise = new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString();
         const sunset = new Date(weatherData.sys.sunset * 1000).toLocaleTimeString();
@@ -29,13 +27,12 @@ async function getWeather() {
         document.querySelector('.current-weather .content').innerHTML = `
             <p><img src="${iconUrl}" alt="${description}" width="50"></p>
             <p><strong>${temperature}°F</strong></p>
-            <p>${description.charAt(0).toUpperCase() + description.slice(1)}</p>
+            <p><span>${description.charAt(0).toUpperCase() + description.slice(1)}<span></p>
             <br>
-            <p><strong>High:</strong> ${high}°F</p>
-            <p><strong>Low:</strong> ${low}°F</p>
-            <p><strong>Humidity:</strong> ${humidity}%</p>
-            <p><strong>Sunrise:</strong> ${sunrise}</p>
-            <p><strong>Sunset:</strong> ${sunset}</p>
+            
+            <p><span>Humidity: ${humidity}%</span></p>
+            <p><span>Sunrise: ${sunrise}</span></p>
+            <p><span>Sunset: ${sunset}</span></p>
         `;
     } catch (error) {
         console.error('Error fetching weather data:', error);
