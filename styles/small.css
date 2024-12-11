@@ -36,7 +36,7 @@ nav {background-color: var(--color-04); font-weight: 500;}
 
 #myButton {
     font-size: 2.4rem; /*making the hamburger button bigger*/
-    margin-left: 1rem; /*MUDA A POSIÇÃO DO BOTÃO HAMBURGUER*/
+    margin-left: -0.7rem; /*MUDA A POSIÇÃO DO BOTÃO HAMBURGUER*/
     background: none;
     border: none;
     color: var(--color-04);
@@ -90,112 +90,6 @@ footer {
 
 #currentYear, #lastModified, p {color: var(--color-01);}
 #lastModified {font-weight: 700; color: var(--color-01);}
-
-
-/*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
-/********************** INDEX PAGE **********************/
-.hero-img {max-width: 100%;}
-
-.hero-text {
-    position: static;
-    transform: none;
-    text-align: center;
-    margin-top: 10px;}
-
-.h1-hero {font-size: 2rem;}
-.p-hero {color: var(--color-02); font-size: 1.2rem; margin-top: -10px;}
-
-#hero-button {
-    width: 70%;
-    height: 50px;
-    margin: 20px;
-    margin-bottom: 10px;
-    background-color: var(--color-06);
-    color: var(--color-01);
-    font-size: 1.1rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 10px;}
-
-#hero-button:hover {background-color: var(--bar-color-01);}
-
-/*COLOR BAR BELOW HERO IMAGE*/
-.color-bar {display: flex; height: 20px; width: 100%; margin-top: 20px;}
-.color {flex: 1;}
-.color.green {background-color: var(--bar-color-01);} 
-.color.red {background-color: var(--bar-color-02);}
-.color.yellow {background-color: var(--bar-color-03);} 
-.color.blue {background-color: var(--bar-color-04);}
-.color.orange {background-color: var(--bar-color-05);}
-
-/*EVENTS, WEATHER AND FORECAST CARDS*/
-.index-page {margin: 20px;}
-.container {
-    display: flex; 
-    flex-wrap: wrap; 
-    padding: 1rem; 
-    gap: 1rem;}
-
-span {font-size: 1.3rem;}
-
-.events, .current-weather, .weather-forecast {
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    background-color: var(--color-01);
-    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    flex: 1 1 30%; 
-    min-width: 200px;
-    border-radius: 20px;}
-
-.event-text {
-    margin-top: 10px;
-    background-color: var(--color-06);
-    color: var(--color-01);
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    text-align: center;}
-
-.bold {text-align: center; color: var(--color-02); margin: 10px;}
-.event-img {width: 100%; height: auto;}
-
-/*MESSAGE STYLE*/
-#message-content {
-    background-color: var(--color-06);
-    padding-top: 5px;
-    margin: 10px 0;
-    font-family: var(--font-family-01);
-    animation: pulse 1.5s infinite;}
-
-#message-content:hover {transform: scale(1.02);}
-
-.message {color: var(--color-02); text-align: center;}
-.message {margin: 0; font-size: 1.5rem; font-weight: 600;}
-
-/*COUNT STYLE*/
-#visitor-count {
-    background-color: var(--color-02);
-    color: var(--color-01);
-    padding: 5px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5px;}
-
-/*CURRENT WEATHER SECTION*/
-.content p {color: var(--color-02); text-align: center;}
-.current-weather {background-color: var(--color-01); border-left: 07px solid var(--bar-color-03);}
-.current-weather .content {font-size: 1.6rem; margin-bottom: 15px;}
-.current-weather img {width: 90px; height: 90px; margin-bottom: -10px;}
-
-/*FORECAST SECTION*/
-.weather-forecast {background-color: var(--color-01); border-left: 07px solid var(--bar-color-03);}
-.weather-forecast .content {font-size: 1.2rem; font-weight: 500;}
-.weather-forecast .content p {margin: 5px 0;}
-.weather-forecast p {display: flex; justify-content: center; align-items: center;}
-.weather-forecast img {width: 70px; height: 70px;}
-
 
 
 /********************** ADVENTURE PAGE ******************/

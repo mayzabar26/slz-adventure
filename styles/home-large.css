@@ -1,0 +1,114 @@
+/*THIS CSS FILE IS FOR LARGER DEVICES*/
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    --font-family-01: "Roboto";
+    --font-family-02: "Open Sans";
+    --font-family-03: "Montserrat";
+  
+    --color-01: #ffffff;
+    --color-02: #000000;
+    --color-03: #88ccee;
+    --color-04: #d94a38;
+    --color-05: #f4ede4;
+    --color-06: #66a182;
+
+    --bar-color-01: #008000;
+    --bar-color-02: #FF4500;
+    --bar-color-03: #FFD700;
+    --bar-color-04: #00CED1;
+    --bar-color-05: #FFA500;
+}
+
+@media only screen and (min-width: 38rem) {
+    /*SAME CSS VALUES FOR ALL PAGES*/
+    /***HEADER AND NAV BAR***/
+    #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
+    ul.menuLinks, ul.menuLinks.open {display: flex; justify-content: end;} /*Will organize our menu links in the and of the bar*/
+    ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
+    header {background-color: var(--color-01);}
+
+    /***FOOTER AND SOCIALS ICON***/
+    footer {
+        background-color: var(--color-04); 
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 1rem;
+    }
+    
+    .footer-info {padding: 20px; text-align: left;}
+    .footer-js {padding: 20px; text-align: right;}
+    #currentYear, #lastModified, p {color: var(--color-01);}
+    #lastModified {font-weight: 700; color: var(--color-01);}
+
+    .footer-social {
+        display: flex;
+        justify-content: center; /*Place the icons in the center horizontally.*/
+        gap: 20px; /*Space between the icons*/
+        padding: 30px 0;
+    }
+    
+    .social-icon {
+        color: var(--color-01);
+        font-size: 2rem; /*Icons' size */
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .social-icon:hover {color: var(--color-02);}
+    nav {grid-template-rows: 1fr;}
+    .list {width: 600px;}
+    .list .member-card {font-size: 0.75rem;}
+    .grid {font-size: 0.89rem;}
+
+
+    /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
+    /********************** INDEX PAGE **********************/
+    .hero-section {position: relative;}
+
+    .hero-img {max-width: 100%;}
+
+    .hero-text {
+        position: absolute;
+        bottom: 190px;
+        left: 50px;
+        background-color: var(--color-01);
+        color: var(--color-02);
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 1.2rem;
+        padding-bottom: 40px;
+        padding-top: -20px;
+        border-radius: 20px;
+    }
+
+    .h1-hero {padding-top: 40px; font-size: 2rem; font-size: 1.6rem;}
+    .p-hero {color: var(--color-02); text-align: center; font-size: 1.3rem;}
+    .color-bar {margin-top: -5px;}
+
+    /*ANIMATION/TRANSITION - HERO BUTTON*/
+    #hero-button {animation: pulse 1s infinite;}
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1); 
+        }
+        50% {
+            transform: scale(1.1); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /*MESSAGE AND COUNT CONTAINER*/
+    #message-content {animation: none; margin-bottom: 30px;}
+    #message-content:hover {transform: none;}
+    .message {color: var(--color-02);}
+    #visitor-count {color: var(--color-01); background-color: var(--color-02);}
+
+    .current-weather .content {position: relative; top: -50px;}
+
+    .weather-forecast .content {position: relative; top: -70px;}
+}
