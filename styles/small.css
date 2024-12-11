@@ -106,7 +106,7 @@ footer {
     margin-top: 10px;
 }
 
-.h1-hero {font-size: 1.6rem;}
+.h1-hero {font-size: 2rem;}
 .p-hero {color: var(--color-02); font-size: 1.2rem; margin-top: -10px;}
 
 #hero-button {
@@ -143,7 +143,7 @@ footer {
     padding: 1rem; 
     gap: 1rem;
 }
-.cards {
+.events, .current-weather, .weather-forecast {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -178,12 +178,12 @@ footer {
 
 #message-content:hover {transform: scale(1.02);}
 
-.message {color: var(--color-01); text-align: center;}
+.message {color: var(--color-02); text-align: center;}
 .message {margin: 0; font-size: 1.5rem; font-weight: 600;}
 
 /*COUNT STYLE*/
 #visitor-count {
-    background-color: var(--color-04);
+    background-color: var(--color-02);
     color: var(--color-01);
     padding: 5px;
     font-weight: bold;
@@ -191,15 +191,21 @@ footer {
     margin-top: 5px;
 }
 
-/*Additional styling for responsive design*/
-@media only screen and (max-width: 768px) {
-    #message-content {
-        padding: 15px;
-    }
-    #visitor-count {
-        font-size: 1rem;
-    }
-}
+/*CURRENT WEATHER SECTION*/
+.content p {color: var(--color-02); text-align: center;}
+.current-weather {background-color: var(--color-03); border-left: 07px solid var(--bar-color-03);}
+.current-weather .content {font-size: 1.6rem; margin-bottom: 15px;}
+.current-weather img {width: 90px; height: 90px; margin-bottom: -10px;}
+
+/*FORECAST SECTION*/
+.weather-forecast {background-color: var(--color-03); border-left: 07px solid var(--bar-color-03);}
+.weather-forecast .content {font-size: 1.2rem; font-weight: 500;}
+.weather-forecast .content p {margin: 5px 0;}
+.weather-forecast p {display: flex; justify-content: center; align-items: center;}
+.weather-forecast img {width: 70px; height: 70px;}
+
+
+
 /********************** ADVENTURE PAGE ******************/
 
 
