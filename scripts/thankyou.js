@@ -30,7 +30,24 @@ function formatDate(input) {
 
 //Function to format the time
 function formatTime(input) {
-    return input; //Return the time as it is, since it's already in HH:MM format
+    let timeRange = ''; // Variável para armazenar o intervalo de tempo
+    
+    // Mapeia os valores de tempo para os intervalos correspondentes
+    switch(input) {
+        case 'morning':
+            timeRange = '9 AM - 12 PM';
+            break;
+        case 'afternoon':
+            timeRange = '12 PM - 5 PM';
+            break;
+        case 'evening':
+            timeRange = '5 PM - 9 PM';
+            break;
+        default:
+            timeRange = input; // Se não for um valor esperado, apenas retorna o valor
+    }
+
+    return timeRange; // Retorna o intervalo de tempo formatado
 }
 
 //Function to format the current timestamp
