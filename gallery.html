@@ -24,7 +24,7 @@
     <script src="scripts/gallery.js" defer></script>
 </head>
 
-<body>
+<body id="galleryPage">
     <header><!--LOGO AND ANIMATED BUTTON-->
         <img class="logo-img" src="images/slz_logo.png" alt="SLZ Adventure logo" width="180" loading="lazy">
         <h1 class="company-name"></h1>
@@ -48,17 +48,19 @@
         <div class="color-orange"></div>
     </div>
     
-    <main class="adventures">
+    <main class="galleryImg">
         <section id="slideshow-container" class="slideshow-container">
             <!--SLIDES WILL BE LOADED HERE-->
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            <!--MAIN IMAGE DISPLAYED HERE-->
+            <img id="main-image" src="" alt="Main Image" class="main-image" loading="lazy">
+            <!--IMAGE TITLE-->
+            <p id="image-title" class="image-title"></p>
         </section>
         
         <section id="thumbnails" class="thumbnails">
             <!--THUMBNAILS WILL BE LOADED HERE-->
         </section>
-        
     </main>
 
     <div class="color-bar-footer"> <!--COLOR BAR BELOW NAV-->
