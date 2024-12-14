@@ -67,8 +67,20 @@
 
     /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
     /********************** ADVENTURE PAGE ******************/
+    .hero-container-adv .title-adv {font-size: 3.5rem; top: 35%;}
+    .hero-container-adv {font-size: 1.5rem; top: 35%;}
+    .parag-adv {position: absolute; top: 60%; font-size: 1.9rem;}
+    .btn-places-food {bottom: 0.1px; gap: 20px;}
+    .btn-places-food button {padding: 10px 20px; font-size: 1.1rem; border: none;}
 
+    #sugestions {grid-template-columns: repeat(3, 1fr); gap: 30px;}
+    
+    dialog {
+        width: 50%;
+        padding: 20px;
+    }
 
+       
 
 
     /********************** GALLERY PAGE ********************/
