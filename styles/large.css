@@ -67,11 +67,14 @@
 
     /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
     /********************** ADVENTURE PAGE ******************/
+    #adv-page {background-color: var(--color-01);}
     .hero-container-adv .title-adv {font-size: 3.5rem; top: 35%;}
     .hero-container-adv {font-size: 1.5rem; top: 35%;}
     .parag-adv {position: absolute; top: 60%; font-size: 1.9rem;}
-    .btn-places-food {bottom: 0.1px; gap: 20px;}
+    .btn-places-food {bottom: -5px; gap: 20px;}
     .btn-places-food button {padding: 10px 20px; font-size: 1.1rem; border: none;}
+    .btn-places-food button:hover {background-color: var(--color-01); color: var(--color-02);}
+    
 
     #sugestions {grid-template-columns: repeat(3, 1fr); gap: 30px;}
     
