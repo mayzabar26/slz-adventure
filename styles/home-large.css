@@ -65,15 +65,12 @@
 
     /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
     /********************** INDEX PAGE **********************/
-    .hero-section {position: relative;}
+    .hero-section {position: relative;} /*TALVEZ MUDAR*/
 
     .hero-img {max-width: 100%;}
 
     .hero-text {
-        position: absolute;
-        bottom: 190px;
-        left: 50px;
-        background-color: var(--color-01);
+        position: relative;
         color: var(--color-02);
         padding-left: 40px;
         padding-right: 40px;
@@ -82,9 +79,9 @@
         border-radius: 20px;
     }
 
-    .h1-hero {padding-top: 40px; font-size: 2rem; font-size: 1.6rem;}
-    .p-hero {color: var(--color-02); text-align: center; font-size: 1.3rem;}
-    .color-bar {margin-top: -5px;}
+    .h1-hero {padding-top: 40px; font-size: 3vw;}
+    .p-hero {color: var(--color-02); text-align: center; font-size: 2vw;}
+    .color-bar {margin-top: 5px;}
 
     #currentYear {font-size: 1rem;}
 
@@ -109,5 +106,6 @@
     .message {color: var(--color-02);}
     #visitor-count {color: var(--color-01); background-color: var(--color-02);}
     .current-weather .content {position: relative; top: -50px;}
-    .weather-forecast .content {position: relative; top: -70px;}
+    .weather-forecast .content {position: relative; top: -70px; font-size: 2vw;}
+    .event-text {font-size: 2vw;}
 }

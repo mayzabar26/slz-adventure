@@ -100,11 +100,6 @@
     .wayfinding-btn.active {background-color: var(--color-01); color: var(--color-02);}
     #places-btn #food-btn {transition: fill 0.3s ease;}
 
-
-
-
- 
-
     /********************** GALLERY PAGE ********************/
     .galleryImg {
         display: grid; 
