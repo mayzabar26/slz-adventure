@@ -93,7 +93,7 @@
     }
 
     .wayfinding-btn.active {background-color: var(--color-01); color: var(--color-02);}
-    #places-btn #food-btn {transition: fill 0.3s ease;} /* Style for the button icons */
+    #places-btn #food-btn {transition: fill 0.3s ease;} /*Style for the button icons*/
  
 
     /********************** GALLERY PAGE ********************/
@@ -157,7 +157,7 @@
         position: relative;
     }
     
-    /******************TOP AND BOTTOM BACKGROUND******************/
+    /*TOP AND BOTTOM BACKGROUND*/
     .top-background {
         position: absolute;
         top: 0;
@@ -178,7 +178,7 @@
         z-index: 1;
     }
     
-    /******************MAIN CONTENT******************/
+    /*MAIN CONTENT*/
     main.content {z-index: 2; max-width: 600px; padding: 20px; background-color: var(--color-01);}
     
     /*CHECK ICON */
