@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="scripts/slz_script.js" defer></script>
+    <script src="scripts/places-and-food.js" defer></script>
 </head>
 
 <body id="adv-page">
@@ -46,21 +47,38 @@
             <p class="parag-adv">Discover the best experiences!</p>
             
             <nav class="btn-places-food"> <!--BUTTONS FOR THE USER (CHOOSE PLACES OR FOOD)-->
-                <button id="places-btn"><img src="images/mapicon.svg" alt="Places Icon" class="icon"> Places</button>
-                <button id="food-btn"><img src="images/restauranticon.svg" alt="Food Icon" class="icon"> Food</button>
+                <button id="places-btn" class="wayfinding-btn">
+                    <!-- SVG for Places Icon -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24">
+                        <path d="M288 0C221.7 0 168 53.73 168 120c0 48.38 16.86 61.9 107.7 193.5c5.957 8.604 18.69 8.604 24.65 0C391.1 181.9 408 168.4 408 120C408 53.73 354.3 0 288 0zM288 176C261.5 176 240 154.5 240 128S261.5 80 288 80c26.48 0 48 21.53 48 48S314.5 176 288 176zM10.06 227.6C3.984 230 0 235.9 0 242.4v253.5c0 11.32 11.49 19.04 22 14.84L160 448V201.4C152.5 188.8 147.2 178 143.4 167.5L10.06 227.6zM326.6 331.8C317.9 344.4 303.4 352 288 352c-15.42 0-29.86-7.566-38.66-20.28C233.2 308.3 196.9 256.6 192 249.6V447.1L384 512V249.6C379.1 256.6 342.8 308.3 326.6 331.8zM554.1 161.2L416 224v288l149.9-67.59C572 441.1 576 436.1 576 429.6V176C576 164.7 564.6 156.1 554.1 161.2z"/>
+                    </svg>
+                    Places
+                </button>
+
+                <button id="food-btn" class="wayfinding-btn">
+                    <!-- SVG for Food Icon -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                        <path d="M342.7,223.94h14.87a79.48,79.48,0,0,0,56.58-23.44L496,118,473.78,95.6,390.2,179.18l-17.37-17.37,83.58-83.59-23-22.31-83.27,83.26L332.82,121.8,416.4,38.21,394,16,311.5,97.85a79.49,79.49,0,0,0-23.44,56.59V169.3l-43.13,43.13L48,16C3.72,70.87,29.87,171.71,79.72,221.57l85.5,85.5c26.55,26.55,31.82,28.92,61.94,16.8,6.49-2.61,8.85-2.32,14.9,3.72l13,12.13c2.93,3,3,3.88,3,9.62v5.54c0,21.08,13.48,33.2,22.36,42.24L384,496l72-72L299.57,267.07Z"/><path d="M227.37,354.59c-29.82,6.11-48.11,11.74-83.08-23.23-.56-.56-1.14-1.1-1.7-1.66l-19.5-19.5L16,416l80,80L240,352Z"/></svg>
+                    </svg>
+                    Food
+                </button>
             </nav>
         </div>
-        
-        <section id="sugestions" class="grid">
-            <!--SUGESTIONS WILL BE DISPLAYED HERE-->
+
+        <!-- Section for Suggestions -->
+        <section id="suggestions">
+            <h2>Suggestions</h2>
+            <div id="places-list" class="cards-container"></div>
+            <div id="foods-list" class="cards-container"></div>
         </section>
 
-        <!--DIALOG FOR DISPLAYING PLACES INFO HERE-->
-        <dialog id="info-dialog">
+        <!-- Dialog for Details -->
+        <dialog id="details-dialog">
             <button id="close-dialog" aria-label="Close dialog">&times;</button>
             <h2 id="dialog-title"></h2>
             <p id="dialog-description"></p>
-            <img id="dialog-img" alt="Dialog image">
+            <div id="dialog-photos" class="photo-cards"></div>
+            <p id="dialog-address"></p>
         </dialog>
     </main>
 

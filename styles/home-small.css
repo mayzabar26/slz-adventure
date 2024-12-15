@@ -95,6 +95,7 @@ footer {
 
 /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
 /********************** INDEX PAGE **********************/
+.hero-section {position: relative; text-align: center;}
 .hero-img {max-width: 100%;}
 
 .hero-text {
@@ -158,6 +159,21 @@ span {font-size: 1.3rem;}
     padding: 0.5rem;
     font-size: 1.2rem;
     text-align: center;}
+
+@media (max-width: 768px) {
+    .container {flex-direction: column;}
+    .events, .current-weather, .weather-forecast {flex: 1 1 100%; margin-bottom: 1rem;}
+    .h2-cards {font-size: 1.5rem;}
+    .event-text {font-size: 1rem;}
+}
+    
+@media (max-width: 480px) {
+    .h1-hero {font-size: 1.6rem;}
+    .p-hero {font-size: 0.9rem;}
+    #hero-button {width: 90%;}
+    .events img, .current-weather img, .weather-forecast img {width: 100%; height: auto;}
+}
+
 
 .bold {text-align: center; color: var(--color-02); margin: 10px;}
 .event-img {width: 100%; height: auto;}
