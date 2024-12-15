@@ -105,7 +105,7 @@
     #message-content:hover {transform: none;}
     .message {color: var(--color-02);}
     #visitor-count {color: var(--color-01); background-color: var(--color-02);}
-    .current-weather .content {position: relative; top: 5x;}
+    .current-weather .content {position: relative; top: 5px;}
     .weather-forecast .content {position: relative; top: -70px; font-size: 2vw;}
     .event-text {font-size: 2vw;}
 }
