@@ -67,17 +67,21 @@
 
     /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
     /********************** ADVENTURE PAGE ******************/
-    #adv-page {background-color: var(--color-01);}
-    .hero-container-adv .title-adv {font-size: 3.5rem; top: 35%;}
-    .hero-container-adv {font-size: 1.5rem; top: 35%;}
-    .parag-adv {position: absolute; top: 60%; font-size: 1.9rem;}
+    .title-adv {font-size: 4vw;}
+    .parag-adv {font-size: 2vw;}
     .btn-places-food {bottom: -5px; gap: 20px;}
-    .btn-places-food button {padding: 10px 20px; font-size: 1.1rem; border: none;}
+    .btn-places-food button {
+        padding: 10px 20px; 
+        font-size: 1.1rem; 
+        border: none;
+    }
+
     .btn-places-food button:hover {background-color: var(--color-01); color: var(--color-02); stroke: black;}
     button .icon {fill: var(--bar-color-04);} /*COLOR SVG ICON*/
+
     button .icon:hover {fill: var(--bar-color-02);} /*COLOR SVG ICON*/
-    #sugestions {grid-template-columns: repeat(3, 1fr); gap: 30px;}
-    
+    .cards-container {margin-bottom: 20px; margin-top: 40px;}
+
     /*DIALOG FOR THE PLACES AND  FOOD*/
     dialog {width: 50%; padding: 20px;}
     .card {width: 330px; margin: 20px; margin-bottom: 30px;}
@@ -92,8 +96,13 @@
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 
+
     .wayfinding-btn.active {background-color: var(--color-01); color: var(--color-02);}
-    #places-btn #food-btn {transition: fill 0.3s ease;} /*Style for the button icons*/
+    #places-btn #food-btn {transition: fill 0.3s ease;}
+
+
+
+
  
 
     /********************** GALLERY PAGE ********************/
