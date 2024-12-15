@@ -400,3 +400,86 @@ dialog button {
 #suggestions h2 {margin: 20px;}
 
 #close-dialog {margin-left: 300px; margin-top: 5px; margin-bottom: 10px;}
+
+/********************** PLAN YOUR TRIP PAGE *************/
+/*COLOR BAR (NAV AND FOOTER)*/
+.color-bar-form {display: flex; height: 20px; width: 100%;}
+.color-bar-footer {display: flex; height: 20px; width: 100%; margin-top: 20px;}
+.color-green {background-color: var(--bar-color-01); flex: 1;} 
+.color-red {background-color: var(--bar-color-02); flex: 1;}
+.color-yellow {background-color: var(--bar-color-03); flex: 1;} 
+.color-blue {background-color: var(--bar-color-04); flex: 1;}
+.color-orange {background-color: var(--bar-color-05); flex: 1;}
+
+/*FORM STYLE*/
+#form {background-color: var(--color-05); color: var(--color-02);}
+
+.plan-trip {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--color-01);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;}
+
+.plan-trip h1 {font-size: 1.5rem; color: var(--color-02); margin-bottom: 20px;}
+form.designOne {display: flex; flex-direction: column; gap: 15px;}
+form.designOne .form-group {text-align: left;}
+.form-text {margin-bottom: 15px;}
+
+form.designOne label {
+    font-size: 0.95rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;}
+
+form.designOne input,
+form.designOne select,
+form.designOne textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;}
+
+form.designOne input:focus,
+form.designOne select:focus,
+form.designOne textarea:focus {
+    outline: none;
+    border-color: var(--color-06);
+    background-color: var(--color-01);}
+
+form.designOne textarea {resize: vertical; min-height: 80px;}
+
+/*SUBMIT BUTTON*/
+.schedulebtn {
+    padding: 12px;
+    font-size: 1rem;
+    color: var(--color-01);
+    background-color: var(--bar-color-01);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    font-weight: 500;}
+
+.schedulebtn:hover {background-color: var(--color-02); transform: translateY(-2px); font-weight: 500;}
+
+/*****ANIMATION/TRANSITION - HERO BUTTON*****/
+.schedulebtn {animation: pulse 1s infinite;}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(0.9); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
