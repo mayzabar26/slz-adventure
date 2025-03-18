@@ -108,13 +108,13 @@ footer {
 .p-hero {color: var(--color-02); font-size: 3.6vw; margin-top: -10px;}
 
 #hero-button {
-    width: 30%;
+    width: 60%;
     height: 50px;
     margin: 20px;
     margin-bottom: 10px;
     background-color: var(--bar-color-01);
     color: var(--color-01);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     border: none;
     border-radius: 10px;}
@@ -165,7 +165,7 @@ span {font-size: 1.3rem;}
 
 /*MESSAGE STYLE*/
 #message-content {
-    background-color: var(--color-06);
+    background-color: var(--color-04);
     padding-top: 5px;
     margin: 10px 0;
     font-family: var(--font-family-01);
@@ -184,8 +184,12 @@ span {font-size: 1.3rem;}
     }
 }
 
-.message {color: var(--color-02); text-align: center;}
-.message {margin: 0; font-size: 1.5rem; font-weight: 600;}
+.message {
+    margin: 0; 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: var(--color-01); 
+    text-align: center;}
 
 /*COUNT STYLE*/
 #visitor-count {
