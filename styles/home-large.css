@@ -27,6 +27,7 @@
     ul.menuLinks, ul.menuLinks.open {display: flex; justify-content: end;} /*Will organize our menu links in the and of the bar*/
     ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
     header {background-color: var(--color-01);}
+    #hero-button {width: 40%;}
 
     /***FOOTER AND SOCIALS ICON***/
     footer {
