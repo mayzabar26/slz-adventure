@@ -67,7 +67,6 @@
     /*SPECIFIC CSS VALUES FOR EACH PAGE STARTS HERE*/
     /********************** INDEX PAGE **********************/
     .hero-section {position: relative;} /*TALVEZ MUDAR*/
-
     .hero-img {max-width: 100%;}
 
     .hero-text {
@@ -108,4 +107,8 @@
     .current-weather .content {position: relative; top: 5px;}
     .weather-forecast .content {position: relative; top: -70px; font-size: 2vw;}
     .event-text {font-size: 2vw;}
+
+
+    
+
 }

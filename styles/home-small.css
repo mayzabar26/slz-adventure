@@ -19,6 +19,7 @@
     --bar-color-04: #00CED1;
     --bar-color-05: #FFA500;
 }
+
 /***********HOME PAGE***********/
 
 /*HEADER, TITLE AND LOGO IMG*/
@@ -255,11 +256,10 @@ main.adventures {text-align: center;}
 
 .hero-container-adv nav {
     position: absolute;
-    /*bottom: 10%;
-    left: 50%;*/
     transform: translateX(-50%);}
 
-/*PLACES AND FOOD BTN*/
+
+/*PLACES AND FOOD BUTTON*/
 .hero-container-adv {position: relative; text-align: center;}
 
 .btn-places-food {
@@ -286,61 +286,63 @@ main.adventures {text-align: center;}
     transition: all 0.3s ease;}
 
 .btn-places-food button:hover {background-color: var(--color-04); color: var(--color-01);} 
+.icon {fill: var(--color-01); } /*SVG ICON*/
 
-/*SVG ICON*/
-.icon {
-    fill: var(--color-01);  /* Cor padrão preta */
+/*Modifique a cor do ícone ao passar o mouse (hover)*/
+button:hover .icon {fill: var(--color-02);} /* Muda para vermelho no hover */
+
+    
+/*STYLE CARDS*/
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 400px; /*comprimento dos cards*/
+    margin: 5px;
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-/* Modifique a cor do ícone ao passar o mouse (hover) */
-button:hover .icon {
-    fill: var(--color-02);  /* Muda para vermelho no hover */
+.card-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-#sugestions {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;}
+.card p {font-size: 18px; color: var(--color-02);}
+.card:hover {transform: scale(1.05);}
+.card h3 {margin: 0.5rem 0; font-size: 1.2rem; color: var(--color-02);}
+.cards-container {margin: 0; padding: 0; padding-top: 30px;}
+.card img {height: 150px; max-width: 100%;} /*Garantir imagens do mesmo tamanho e cards alinhados*/
 
-dialog {
-    width: 90%;
-    margin: auto;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
 
-/*DIALOG*/
-.grid {
+/*STYLE DIALOG*/
+/*.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    padding: 1rem;}
+    padding: 1rem;
+}*/
 
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;}
-
-.card:hover {transform: scale(1.05);}
-.card img {width: 100%; height: 150px; object-fit: cover;}
-.card h3 {margin: 0.5rem 0; font-size: 1.2rem; color: var(--color-02);}
-.card p {font-size: 0.9rem; color: var(--color-02); padding: 0.5rem;}
-.cards-container {margin: 0; padding: 0; max-width: 90%; padding-top: 20px;}
-
-/*STYLE FOR DIALOG*/
 dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centralizando o dialog*/
+
     border: none;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    text-align: center;}
+    padding: 2rem;
+    background-color: var(--color-01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 999;
+    
+    max-width: 90%;
+    width: 400px;}
 
 dialog img {width: 90%; border-radius: 8px; margin-bottom: 1rem;}
 
@@ -354,26 +356,6 @@ dialog button {
     font-size: 1rem;}
 
 /*SUGGESTIONS CARDS*/
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    width: 400px;
-    margin: 5px;
-    margin-bottom: 30px;
-    display: inline-block;
-    vertical-align: top;}
-
-.card-image {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;}
-
-.card h3 {margin: 5px 0 5px; font-size: 20px; font-weight: bold;}
-.card p {font-size: 18px; color: var(--color-02);}
 #dialog-description, #dialog-address {color: var(--color-02); margin: 5px; font-size: 0.9rem;}
 
 .card button {
@@ -390,6 +372,7 @@ dialog button {
 #suggestions h2 {margin: 20px;}
 
 #close-dialog {margin-left: 300px; margin-top: 5px; margin-bottom: 10px;}
+
 
 /********************** PLAN YOUR TRIP PAGE *************/
 /*COLOR BAR (NAV AND FOOTER)*/
