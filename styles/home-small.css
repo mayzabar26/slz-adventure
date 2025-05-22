@@ -106,13 +106,12 @@ footer {
     margin-top: 10px;}
 
 .h1-hero {font-size: 4.5vw;}
-.p-hero {color: var(--color-02); font-size: 3.6vw; margin-top: -10px;}
+.p-hero {color: var(--color-02); font-size: 3.6vw; margin-top: 25px;}
 
 #hero-button {
-    width: 60%;
+    width: 70%;
     height: 50px;
     margin: 20px;
-    margin-bottom: 10px;
     background-color: var(--bar-color-01);
     color: var(--color-01);
     font-size: 1rem;
@@ -136,7 +135,7 @@ footer {
 .container {
     display: flex; 
     flex-wrap: wrap; 
-    padding: 1rem; 
+    padding: 1.2rem; 
     gap: 1rem;}
 
 span {font-size: 1.3rem;}
@@ -148,18 +147,18 @@ span {font-size: 1.3rem;}
     border: 1px solid #ccc;
     background-color: var(--color-01);
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 1.2rem;
     flex: 1 1 30%; 
     min-width: 200px;
     border-radius: 20px;}
 
 .event-text {
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: var(--bar-color-03);
     color: var(--color-02);
     padding: 0.5rem;
-    font-size: 4vw;
     text-align: center;}
+
 
 .bold {text-align: center; color: var(--color-02); margin: 10px;}
 .event-img {width: 100%; height: auto;}
@@ -202,16 +201,27 @@ span {font-size: 1.3rem;}
     margin-top: 5px;}
 
 /*CURRENT WEATHER SECTION*/
-.content p {color: var(--color-02); text-align: center;}
-.current-weather {background-color: var(--color-01); border-left: 07px solid var(--bar-color-03);}
-.current-weather .content {font-size: 3vw; margin-bottom: 15px;}
-.current-weather img {width: 90px; height: 90px; margin-bottom: -10px;}
+.content p {
+    color: var(--color-02); 
+    text-align: center; 
+    margin: auto;
+    /* ORGANIZAÇÃO DA CONTENT DENTRO DOS CARDS */
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-weather {background-color: var(--color-01); border-left: 7px solid var(--bar-color-03);}
+/*.current-weather .content {font-size: 3vw; margin-bottom: 15px;}*/
+.current-weather img {width: 90px; height: 90px;}
 
 /*FORECAST SECTION*/
 .weather-forecast {background-color: var(--color-01); border-left: 07px solid var(--bar-color-03);}
-.weather-forecast .content {font-size: 4vw; font-weight: 500;}
-.weather-forecast .content p {margin: 5px 0;}
-.weather-forecast p {display: flex; justify-content: center; align-items: center;}
+.weather-forecast .content {font-size: 25px; font-weight: 500;}
+.weather-forecast .content p {margin: 35px 0;}
+/*.weather-forecast p {display: flex; justify-content: center; align-items: center;}*/
 .weather-forecast img {width: 70px; height: 70px;}
 
 
@@ -298,7 +308,7 @@ button:hover .icon {fill: var(--color-02);} /* Muda para vermelho no hover */
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    width: 400px; /*comprimento dos cards*/
+    width: 80%; /*comprimento dos cards*/
     margin: 5px;
     margin-bottom: 30px;
     display: inline-block;
@@ -318,6 +328,7 @@ button:hover .icon {fill: var(--color-02);} /* Muda para vermelho no hover */
 .card h3 {margin: 0.5rem 0; font-size: 1.2rem; color: var(--color-02);}
 .cards-container {margin: 0; padding: 0; padding-top: 30px;}
 .card img {height: 150px; max-width: 100%;} /*Garantir imagens do mesmo tamanho e cards alinhados*/
+
 
 
 /*STYLE DIALOG*/
