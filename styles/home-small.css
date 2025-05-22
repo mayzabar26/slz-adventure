@@ -219,7 +219,7 @@ span {font-size: 1.3rem;}
 
 /*FORECAST SECTION*/
 .weather-forecast {background-color: var(--color-01); border-left: 07px solid var(--bar-color-03);}
-.weather-forecast .content {font-size: 3.8vw; font-weight: 500;}
+.weather-forecast .content {font-weight: 500;}
 .weather-forecast .content p {margin: 35px 0;}
 /*.weather-forecast p {display: flex; justify-content: center; align-items: center;}*/
 .weather-forecast img {width: 70px; height: 70px;}
